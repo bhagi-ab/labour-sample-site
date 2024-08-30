@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="sty.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+	<div class="topbar">
+		<p><i class="fas fa-phone"></i> 0112 201 201
+       <i class="fas fa-envelope"></i> contacts@labourdept.gov.lk        
+		</p>
+		<div class ="lang">
+		<button>සිංහල</button>
+		<button>தமிழ்</button>
+		<button>English</button></div>
+			</div>
+			
+	</head>
+<body>
+	<header>
+		<img src="image/trans-logo-labor.png">
+		
+			<nav class="main-nav">
+				<ul>
+					<li><a href="#home"><i class="fas fa-home"></i> HOME</a></li>
+					<li><a href="#about"><i class="fas fa-contact-card"></i>ABOUT</a></li>
+					<li><a href="#services"><i class="fas fa-user-group"></i>SERVICES</a></li>
+					<li><a href="#services"><i class="fas fa-note-sticky"></i>NOTICE</a></li>
+					<li><a href="#services"><i class="fas fa-newspaper"></i>NEWS</a></li>
+					<li><a href="#services"><i class="fas fa-download"></i>DOWNLOADS</a></li>
+					<li><a href="#contact"><i class="fas fa-contact-book"></i>CONTACT US</a></li>
+					<li><a href="#services"><i class="fas fa-search"></i>SEARCH</a></li>
+				</ul>
+			</nav>
+			<nav class="mini-nav">
+				<ul>
+				<div class="one">TRADE UNION</div>
+					<div class ="two">
+				<li><a href="#home">Home    /</a></li>
+				<li><a href="#trade-unions">Trade Unions</a></li>
+					</div>
+				</ul>
+				
+		
+			</nav>
+	</header>
+	<main>
+		<form>
+			<h1 class="a">APPLICATION FOR REGISTRATION OF TRADE UNIONS
+			</h1>
+				<h1 class="b"> (B FORM)</h1>
+				
+					
+				<div class="form-container-fluid text-center pt-3">
+					<div class="row">
+						<div class="col-lg-6">
+					<h1 class="b"> FORM</h1></div>
+					<div class="col-lg-6">
+					<h1 class="b">INSTRUCTION</h1></div></div>
+					
+					
+					
+					
+					
+					
+					<div class ="row" >
+						<div class ="col-lg-6">
+							<form action="submit.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+								<div class="form-section">
+									<h6>TO THE REGISTER TRADE UNION OF COLOMBO</h6>
+									<label for="trade-union-name">Name of Trade Union:</label><br>
+									
+									<input type="text" id="trade-union-name" name="trade-union-name" onblur="checkAvailability()">
+									<span id="availability" class="availability"></span>
+								</div>
+								Trade Union Name Available
+								<div class="form-section">
+									<label for="address">Address:</label><br>
+									<input type="text" id="address" name="address">
+								</div>
+								<div class="form-section">
+									<label for="establishment-date">Date of Establishment of the Trade Union:</label><br>
+									<input type="date" id="establishment-date" name="establishment-date">
+								</div></div>
+								
+								
+							
+								
+								<div class="col-lg-6">
+									<ul>
+									<li> Enter the Name of Trade Union.This name should be unique.Otherwise request will be rejected.</li><br>
+										<li>Enter the registered address of the office of trade union.</li><br>
+										<li>Select the established date of the trade union by date picker. </li><br>
+									</ul>
+									<center><img src="image/white-btn.webp"></center><br><br>
+									</div>
+								
+								
+								</div>
+							</div>
+								
+								
+								
+								<div class="form-container">
+								
+								<div class="form-section sub-form" id="president-section">
+									<h3 onclick="toggleSection('president-section')">President</h3>
+									<div class="sub-form-content">
+										<div class="row">
+										<div>
+											<div class="col-lg-2">
+											<label for="president-name">Name:</label></div>
+											<div class="col-lg-10">
+											<input type="text" id="president-name" name="president-name"><br>
+										</div></div>
+										</div><br>
+										<div class="row">
+											<div class="col-lg-6">
+											<label for="president-nic">National Identity Card (NIC):</label><br>
+											<input type="text" id="president-nic" name="president-nic"><br></div>
+											
+											<div class="col-lg-6">
+											<label for="president-whatsapp">Whatsapp Number:</label><br>
+											<input type="text" id="president-whatsapp" name="president-whatsapp"><br>
+										</div></div>
+										<div><br>
+										<div class="row">
+											<div class="col-lg-6">
+											<label for="president-contact">Contact Number:</label><br>
+											<input type="text" id="president-contact" name="president-contact"></div>
+											
+											<div class="col-lg-6">
+											<label for="president-email">Email:</label><br>
+											<input type="email" id="president-email" name="president-email"></div>
+										</div>
+									</div>
+								</div>
+								</div>
+								
+								
+								
+								<div class="form-section sub-form" id="secretary-section">
+									<h3 onclick="toggleSection('secretary-section')">Secretary</h3>
+									<div class="sub-form-content">
+										<div>
+										<div class="row">
+										<div class="col-lg-2">
+											<label for="secretary-name">Name:</label></div>
+											<div class="col-lg-10">
+											<input type="text" id="secretary-name" name="secretary-name"><br></div></div>
+											<br>
+											
+											<div class="row">
+												<div class="col-lg-6">
+											<label for="secretary-nic">National Identity Card (NIC):</label><br>
+											<input type="text" id="secretary-nic" name="secretary-nic"><br></div>
+												
+												<div class="col-lg-6">
+												
+												<label for="secretary-whatsapp">Whatsapp Number:</label><br>
+											<input type="text" id="secretary-whatsapp" name="secretary-whatsapp"><br>
+											</div>
+										</div>
+											
+											<div class="row">
+												<div class="col-lg-6">
+										<div>
+											<label for="secretary-contact">Contact Number:</label><br>
+											<input type="text" id="secretary-contact" name="secretary-contact"></div>
+										
+											</div>
+											
+											<div class="col-lg-6">
+											<label for="secretary-email">Email:</label><br>
+											<input type="email" id="secretary-email" name="secretary-email"></div></div>
+										</div>
+									</div>
+								</div>
+								
+								
+								<div class="form-section sub-form" id="upload-section">
+									
+									<h3 onclick="toggleSection('upload-section')">Upload B Form</h3>
+									<label for="upload b-form">Upload B-Form:</label><br>
+									<div class="sub-form-content">
+										<input type="file" id="b-form" name="b-form">
+									
+									</div>
+								</div>
+								<div class="form-section">
+									
+									<button type="submit">Submit</button>
+								</div>
+							</form>
+						
+				</div>
+					</center>
+	</main>
+	<script src="scripts.js"></script>
+	
+	
+	
+	<div class="container">
+	
+	 <div class="row" >
+		 <div class="col-lg-2">
+		CONTACT INFO<br>
+		 <a href="#home"><i class="fas fa-home"></i> Labour Secretariat</a><br>
+			 Colombo 05<br>
+			 Sri Lanka<br>
+			 Mehewara Piyasa <br>
+			 Colombo 5<br>
+			 Sri Lanka<br>
+			 
+			 <a href="#home"><i class="fas fa-phone"></i> +94-112-33-44</a><br>
+			 <a href="#about"><i class="fas fa-contact-card"></i>+94-212-54-34</a>
+		 </div>
+		 <div class="col-lg-4">
+		RELATED LINKS<br>
+			<a href="#ministry"> Ministry of Labour and Foreign <br>
+			 Employment<br></a>
+			 <a href="#centralbank">Employees' Provident Fund-Central Bank<br>
+			 of Sri Lanka</a><br>
+			 <a href="#labourstudies">National Institute of Labour Studies</a>
+			 <a href="#labourstudies">Department of Manpower and <br>Employment</a>
+			 <a href="#labourstudies">National Institute of Occupation Safety<br>and Health</a>
+		 <a href="#labourstudies">Sharma Vasana Fund</a>
+			 <a href="#labourstudies">Office of the commissioner for Workmen's<br>
+			 Compensation</a>
+			 <a href="#labourstudies">National Productivity Secretariat</a>
+			 <a href="#labourstudies">Employees' Trust Fund Board(ETF)</a>
+		 
+		 </div>
+		 <div class="col-lg-3">
+		QUICK LINKS<br>
+		 <a href="#labourstudies">Home</a><br>
+			 <a href="#labourstudies">About Labour Department</a><br>
+			 <a href="#labourstudies">Contact Us</a><br>
+			 <a href="#labourstudies">Downloads</a><br>
+			 <a href="#labourstudies">Site Map</a><br>
+			 <a href="#labourstudies">FAQ</a><br>
+			 <a href="#labourstudies">Organiation Structure</a><br>
+		 </div>
+		
+		<div class="col-lg-3">
+		<img src="image/foot.png"></div>
+	</div>
+	<br>
+	<br>
+	</div>
+	
+	
+	<div class="last">
+	<div class="row">
+    <div class="col-lg-12" align="center">
+		Copyright © 2023 Department of Labour. All Rights Reserved. Powered By SLT-DIGITAL
+		</div>
+	</div>
+		</div>
+		
+</body>
+	
+		
+		
+		
+		
+	
+	
+</html>

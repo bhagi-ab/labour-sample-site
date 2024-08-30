@@ -1,0 +1,171 @@
+.topbar{
+    background: #aa0000;
+	color:#EFEFEF;
+	font-weight: bold;
+	padding: 8px;
+}
+.lang{
+	 position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.lang button {
+    background-color: #aa0000;
+    color: hsl(0, 0%, 82%);
+    border: none;
+    padding: 2px 5px;
+    margin-left: 5px;
+    margin-top: 4%;
+    cursor: pointer;
+}
+
+.lang button:hover {
+    background-color: #343a40;
+    color: #ffcaca
+}
+.main-nav{
+    background-color: #8a181a;
+    background-size: contain; 
+    height: 60px;
+    text-align: right;
+}
+
+
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.main-nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+.main-nav ul li a {
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav ul li a:hover {
+    text-decoration: underline;
+}
+.mini-nav{
+	background: url('image/Background-36.png') repeat;
+    background-size: contain; 
+    height: 60px;
+    text-align: center;
+
+}
+.mini-nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	
+}
+
+.mini-nav ul li{
+	display: inline;
+	margin: 0 15px;
+	
+}
+
+.mini-nav ul li a{
+	color: #8a181a;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+.mini-nav ul li a i {
+	margin-right: 5px;
+}
+.mini-nav ul li a:hover {
+	text-decoration: underline;
+}
+.one{
+	font-size: 35px;
+	align-content: start;
+	color: #683233;
+}
+.two{
+	font-size: 14px;
+	text-align: right;
+	color:  #683233;
+}
+.a{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-align: center;
+	font-size: 25px;
+	color: black;
+}
+
+.b{
+font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+}
+c{
+	font-size: 10px;
+	color:#040404;
+	text-align: center;
+}
+
+.form-container {
+    width: 75%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+	align-content: left;
+	
+}
+
+.availability {
+    font-weight: bold;
+}
+.available {
+    color: green;
+}
+.not-available {
+    color: red;
+}
+.form-section {
+    margin-bottom: 40px;
+}
+.sub-form {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.sub-form h3 {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    background-color: #add8e6;
+    border-radius: 10px 10px 0 0;
+}
+.sub-form-content {
+    display: none;
+    padding: 10px;
+}
+.container{
+	background: url('image/footer.jpg');
+	width: 1500px;
+	color: #FBF6F6;
+	text-align: left;
+	padding: 5px;
+	
+}
+.last{
+	background: #aa0000;
+	padding: 4px;
+	color: #F5F2F2;
+}
